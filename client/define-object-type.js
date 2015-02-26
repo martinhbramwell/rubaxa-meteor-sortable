@@ -70,8 +70,10 @@ Template.sortableItemTarget.events({
     // TODO - what is the collection here? We'll hard-code for now.
     // https://github.com/meteor/meteor/issues/3303
     if (this.name !== input.val() && this.name !== '')
-      updateAttribute(this._id, input.val());
-      //Attributes.update(this._id, {$set: {name: input.val()}});
+      console.log("xx");
+      console.log(this._id);
+      console.log("xx");
+      Meteor.call("updateAttribute", this._id, input.val());
   },
   'keydown input[type=text]': function (event, template) {
     if (event.which === 27) {
@@ -95,7 +97,7 @@ Template.sortable.events({
     // custom code, working on a specific collection
     if (Attributes.find().count() === 0) {
       Meteor.setTimeout(function () {
-        insertAttribute('Not nice to delete the entire list! Add some attributes instead.');
+        Meteor.call("insertAttribute", 'Not nice to delete the entire list! Drag some attributes from the list on the left.');
 /*
         Attributes.insert({
           name: 'Not nice to delete the entire list! Add some attributes instead.',

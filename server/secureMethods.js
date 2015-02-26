@@ -6,7 +6,7 @@ Meteor.methods({
           order: 0
     });
   },
-  updateAttribute: function (id, text) {
-      Attributes.update(id_, {$set: {name: text_}});
+  updateAttribute: function (idObj, text) {
+      Attributes.update(idObj, {$set: {name: text}});
   }
 });

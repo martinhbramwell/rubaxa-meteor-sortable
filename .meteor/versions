@@ -7,7 +7,7 @@ blaze-tools@1.0.2
 boilerplate-generator@1.0.2
 callback-hook@1.0.2
 check@1.0.4
-dburles:mongo-collection-instances@0.2.6
+dburles:mongo-collection-instances@0.3.2
 ddp@1.0.14
 deps@1.0.6
 ejson@1.0.5
@@ -19,9 +19,9 @@ html-tools@1.0.3
 htmljs@1.0.3
 http@1.0.10
 id-map@1.0.2
-insecure@1.0.2
 jquery@1.11.3
 json@1.0.2
+lai:collection-extensions@0.1.1
 launch-screen@1.0.1
 livedata@1.0.12
 logging@1.0.6
