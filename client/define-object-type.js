@@ -70,9 +70,6 @@ Template.sortableItemTarget.events({
     // TODO - what is the collection here? We'll hard-code for now.
     // https://github.com/meteor/meteor/issues/3303
     if (this.name !== input.val() && this.name !== '')
-      console.log("xx");
-      console.log(this._id);
-      console.log("xx");
       Meteor.call("updateAttribute", this._id, input.val());
   },
   'keydown input[type=text]': function (event, template) {
