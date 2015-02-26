@@ -9,3 +9,4 @@ dburles:mongo-collection-instances
 fezvrasta:bootstrap-material-design
 accounts-ui
 accounts-password
+insecure
